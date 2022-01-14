@@ -1,0 +1,82 @@
+-Criar um usuário
+$ git config --global user.name "Nixon"
+
+-Criar um e-mail
+$ git config --global user.email "nixonsilva19@gmail.com"
+
+-Selecionar o editor VSCode
+$ git config --global core.editor 'code --wait'
+
+-Mostrar o nome do usuário
+$ git config user.name
+
+-Criar um pasta
+$ mkdir git-course
+
+-Entrar na pasta
+$ dir git-course/
+
+-Sair da pasta
+$ cd ..
+
+-Criar um repositório
+$ git init
+
+- lista o nome de todos os arquivos do repositório
+$ ls
+
+-Criar um commit
+$ git commit -m "Mensagem"
+O commit cria e salva uma nova versão do arquivo.
+
+-Verificando o ID  do commit, autor, data e a mensagem do commit
+$ git log
+
+-Verificando os commit's alterado por tal autor
+$ git log --author="Nixon"
+
+-Verificiando commit em ordem alfabetica, quantas alterações tiveram, qual commit e onde foi alterado
+$ git shortlog
+
+-Verificando a quantidade de commit e o nome do autor
+$ giy shortlog -sn
+
+-Verificando em forma gráfica as alterações do commit
+$ git log --graph
+
+-Verificando o commit pelo ID
+$ git log [número do ID]
+
+-Verificando a mudança que o commit fez
+$ git show
+
+-Verificando a mudança antes de fazer o commit
+$ git diff
+
+-Verificando o nome do arquivo que foi modificado
+$ git diff --name-only
+
+-Retorna os dados antigos antes da edição
+$ git checkout [nome do arquivo]
+
+-Removendo o arquivo do unstage (removendo o arquivo que foi para ser comitado)
+$ git reset HEAD [nome do arquivo]
+
+-Removendo alterações do arquivo e deixando no status unstage (pronto para ser comitado)
+$ git reset --soft [ID do commit]
+
+-Removendo alterações do arquivo e deixando o status como modified (pronto para ser salvo)
+$ git reset --mixed [ID do commit]
+
+- Irá apagar o ultímo commit
+$ git reset --hard [ID do commit]
+
+
+
+-Ciclos de vida dos arquivos
+Untracked: Arquivo adicionado recentemente no repositório mas que ainda não foi reconhecido pelo Git.
+Unmodified: Arquivo que foi adicionado no Git mas que não teve nenhuma modificação.
+Modified: Arquivo modificado.
+Staged: Versão do arquivo modificado.
+
+

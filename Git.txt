@@ -68,8 +68,20 @@ $ git reset --soft [ID do commit]
 -Removendo alterações do arquivo e deixando o status como modified (pronto para ser salvo)
 $ git reset --mixed [ID do commit]
 
-- Irá apagar o ultímo commit
+-Irá apagar o ultímo commit
 $ git reset --hard [ID do commit]
+
+-Ligando o repositório local ao remoto
+$ git remote add origin git@github.com:nixon1998s/git-course.git
+
+-Mostrar repositório
+$ git remote
+
+-Mostrar o endereço do repositório
+$ git remote -v
+
+-Envia os arquivos para o repositório
+$ git push -u origin master
 
 
 

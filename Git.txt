@@ -71,6 +71,13 @@ $ git reset --mixed [ID do commit]
 -Irá apagar o ultímo commit
 $ git reset --hard [ID do commit]
 
+-Criando um repositório
+$ git init
+$ git add [nome e extensão do arquivo]
+$ git commit -m "texto"
+$ git remote add origin git@github.com:nixon1998s/git-course.git
+$ git push -u origin master
+
 -Ligando o repositório local ao remoto
 $ git remote add origin git@github.com:nixon1998s/git-course.git
 

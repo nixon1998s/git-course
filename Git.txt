@@ -166,6 +166,13 @@ $ git push origin master --tags
 -Verificando todas as tags
 $ git tag
 
+-Deletar tag remotamente
+$ git tag -D [número da tag]
+$ git push origin :[número da tag]
+
+-Deletar branch remotamente
+$ git push origin :[nome do branch]
+
 -Revertendo alteração, mas deixando salvo a alteração feita
 $ git revert [ID do commit]
 

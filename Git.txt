@@ -93,7 +93,21 @@ $ git push -u origin master
 -Clonando meu repositório remoto
 $ git clone git@github.com:nixon1998s/git-course.git git-course-clone
 
--Fork (Método para pegar projetos de outras pessoas do Github)
+-Fork (método para pegar projetos de outras pessoas do Github)
+
+-Branch (um ponteiro móvel para um commit)
+
+-Criar branch
+$ git checkout -b [nome do branch]
+
+-Verificar branchs criados
+$ git branch
+
+-Entrar ou saída de um branch
+$ git checkout [nome do branch]
+
+-Deletar um branch
+$ git branch -D [nome do branch]
 
 
 

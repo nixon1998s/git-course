@@ -100,7 +100,7 @@ $ git clone git@github.com:nixon1998s/git-course.git git-course-clone
 -Criar branch
 $ git checkout -b [nome do branch]
 
--Verificar branchs criados
+-Verificar branches criados
 $ git branch
 
 -Entrar ou saída de um branch
@@ -108,6 +108,39 @@ $ git checkout [nome do branch]
 
 -Deletar um branch
 $ git branch -D [nome do branch]
+
+-----------------------------------------------------------------------------------------------
+-Unir branches (Merge e Rebase)
+Merge - Cria um commit extra para salvar as modificações dos branches
+Pro - Operação não destrutiva
+
+Contra - Commit extra
+       - Histórico poluído
+
+Exemplo:
+			Master
+			  |
+CO - C1 - C2 - C3 - C4 - C36
+		     \	  /
+		     C3-C5
+			|
+		   Experiment
+------------------------------------------------------------------------------------------------
+Rebase - Coloca o branch no inico da fila, não cria um novo branch para salvar as modificações
+Pro - Evita commit extra
+    - Histórico linear (linha reta)
+
+Contra - Perde a ordem cronológica
+		
+Começo do Rebase:			|	Final  do Rebase:
+		 C3 	Experiment	|			Experiment
+		/	  |		|			     |
+CO - C1 - C2 - C3 - C4 - C3'		|	CO - C1 - C2 - C4 - C3'
+		|			|			     |
+	     Master			|			  Master
+
+OBS: Com Rebase permanece em forma linear.
+--------------------------------------------------------------------------------------------------
 
 
 

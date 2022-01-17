@@ -170,6 +170,7 @@ $ git tag
 $ git revert [ID do commit]
 
 
+
 -Ciclos de vida dos arquivos
 Untracked: Arquivo adicionado recentemente no repositório mas que ainda não foi reconhecido pelo Git.
 Unmodified: Arquivo que foi adicionado no Git mas que não teve nenhuma modificação.

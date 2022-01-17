@@ -142,6 +142,32 @@ CO - C1 - C2 - C3 - C4 - C3'		|	CO - C1 - C2 - C4 - C3'
 OBS: Com Rebase permanece em forma linear.
 --------------------------------------------------------------------------------------------------
 
+-Salvar alteração sem subir no GitHub
+$ git stash
+
+-Recuperar alteração
+$ git stash apply
+
+-Mostra uma lista de arquivos no stash
+$ git stash list
+
+-Limpa o stash
+$ git stash clear
+
+-Simplicando comandos
+$ git config --global alias.s status se transforma em $ git s
+
+-Versionando com tag
+$ git tag -a [versão] -m "mensagem"
+
+-Inserindo tag no repositório
+$ git push origin master --tags
+
+-Verificando todas as tags
+$ git tag
+
+-Revertendo alteração, mas deixando salvo a alteração feita
+$ git revert [ID do commit]
 
 
 -Ciclos de vida dos arquivos

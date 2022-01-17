@@ -90,6 +90,11 @@ $ git remote -v
 -Envia os arquivos para o repositório
 $ git push -u origin master
 
+-Clonando meu repositório remoto
+$ git clone git@github.com:nixon1998s/git-course.git git-course-clone
+
+-Fork (Método para pegar projetos de outras pessoas do Github)
+
 
 
 -Ciclos de vida dos arquivos
